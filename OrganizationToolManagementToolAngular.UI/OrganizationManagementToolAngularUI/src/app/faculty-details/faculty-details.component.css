@@ -1,0 +1,22 @@
+/* :host{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  :host > * {
+    margin-bottom: 20px;
+  }
+
+  button{
+    margin:10px;
+  }
+
+  kendo-buttongroup button {
+    margin : 0;
+  } */
+  .panelbar-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }

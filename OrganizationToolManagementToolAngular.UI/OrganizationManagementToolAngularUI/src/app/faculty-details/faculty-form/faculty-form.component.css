@@ -1,0 +1,84 @@
+.formAdd {
+    /* background:#c7b29e; */
+    color:#000000;
+    /* position: absolute; */
+    top: -250px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    /* height: 293px; */
+    padding: 20px;
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    overflow: hidden;
+    box-sizing: border-box;
+      
+    }
+    
+    #toggle1 {
+      position:absolute;
+      appearance:none;
+      cursor:pointer;
+      left:-100%;
+      top:-100%;
+    }
+    
+    #toggle1 + label {
+      position:absolute;
+      cursor:pointer;
+      padding:10px;
+      background: #26ae90;
+    width: 100px;
+    border-radius: 3px;
+    padding: 8px 10px;
+    color: #FFF;
+    line-height:20px;
+    font-size:12px;
+    text-align:center;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+      margin:20px 50px;
+      transition:all 500ms ease;
+    }
+    #toggle1 + label:after {
+      content:"Add New" 
+    }
+    
+    .container {
+    transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+      padding:2em 3em;
+    }
+    
+    #toggle1:checked ~ .formAdd {
+      top: 0;
+    }
+    
+    #toggle1:checked ~ .container {
+      margin-top: 250px;
+    }
+    
+    #toggle1:checked + label {
+      background:#dd6149;
+    }
+    
+    #toggle1:checked + label:after {
+      content:"Close"
+    }
+
+    /* :host{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    :host > * {
+      margin-bottom: 20px;
+    }
+
+    button{
+      margin:10px;
+    }
+
+    kendo-buttongroup button {
+      margin : 0;
+    } */
